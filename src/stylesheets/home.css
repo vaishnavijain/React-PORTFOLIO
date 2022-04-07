@@ -79,6 +79,7 @@ pre{
         border: none; 
         width: auto;
         padding: 5px 15px;
+        font-size:18px;
     }
     .whoiam{
         height: 100vh;
