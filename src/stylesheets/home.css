@@ -1,0 +1,92 @@
+.introduction{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+}
+.introduction p{
+    color: white;
+    font-size: 20px;
+}
+.introduction div h1{
+    color: rgba(247, 247, 247, 0.757);
+    font-size: 80px;
+    font-weight: bold;
+}
+.introduction div h1:hover{
+    color: white;
+    cursor: default;
+    text-shadow: 0px 0px 10px #fff;
+}
+.primary-button{
+    background-color: white;
+    height: 45px;
+    border-radius: 25px;
+    border: none; 
+    width: 50%;
+}
+.primary-button a{
+   text-decoration: none;
+   color: black;
+}
+.devstack{
+    color: black;
+    transition:all 0.5s;
+}
+.devstack:hover{
+    color: white;
+    background-color: #001220;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+.container p{
+    font-size: 25px;
+    padding: 5px;
+}
+.svgs{
+    height: 100%;
+
+}
+.whoiam{
+    height: 75vh;
+    background-size:100% 130%;
+    color: white;
+    background-position: center;
+    /* transition: all 0.5s; */
+}
+/* .whoiam:hover{
+    transform: scale(1.05);
+   
+} */
+pre{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif !important;
+}
+@media(max-width:750px){
+    .introduction div h1{
+        color: rgba(247, 247, 247, 0.757);
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .introduction p{
+        font-size: 18px;
+    }
+    .primary-button{
+        background-color: white;
+        height: 45px;
+        border-radius: 25px;
+        border: none; 
+        width: auto;
+        padding: 5px 15px;
+    }
+    .whoiam{
+        height: 100vh;
+        background-size:220% 100%;
+        color: white;
+    }
+    pre{
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif !important;
+    }
+}

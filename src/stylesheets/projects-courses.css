@@ -1,0 +1,198 @@
+.projects-intro .primary-button{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+.projects-list{
+    overflow: hidden;
+}
+.primary-button{
+    background-color: white;
+    height: 45px;
+    border-radius: 25px;
+    border: none; 
+    width: 50%;
+    font-size: 25px;
+    padding: 5px 15px;
+    margin: 5px;
+    transition: all 1s;
+}
+.primary-button:hover{
+    transform: scale(1.05);
+}
+@media(max-width:750px) {
+    .primary-button{
+        background-color: white;
+        height: 45px;
+        border-radius: 25px;
+        border: none; 
+        width: auto;
+        padding: 5px 15px;
+    }
+    .p-box{
+       margin: 20px;
+    }
+}
+.project{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+    margin-top: 50px;
+    animation: project-animation 5s linear infinite;
+}
+.project:hover >.project-content{
+    opacity: 1;
+    transform: scale(1.05);
+    cursor: pointer;
+    
+}
+.project:hover{
+    animation-play-state: paused;
+}
+.project-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    color:white;
+    font-weight: 500;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+@keyframes project-animation {
+    0%{
+        transform: rotate(-5deg);
+    }
+     25%{
+        transform: rotate(0deg);
+      
+    } 
+     50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(-5deg);
+      
+    } 
+}
+
+.courses-intro{
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.courses-intro-content{
+    width: 50%;
+    color: white;
+    border-left: 5px solid cyan;
+    padding-left: 30px;
+    animation:courses-intro-animation 10s linear infinite;
+}
+.courses-intro-content h1{
+    font-size: 70px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: cyan;
+    border-bottom: 3px solid white;
+}
+.courses-intro-content p{
+    border-right: 5px solid white;
+}
+@media(max-width:750px) {
+    .courses-intro-content h1{
+        font-size: 35px;
+        -webkit-text-stroke-width: 1px;
+    }
+     .courses-intro-content p{
+       padding: 10px;
+       border-right: 2px solid white;
+    }
+    .courses-intro-content{
+        width: 100%;
+        color: white;
+        border-left: 3px solid white;
+        padding-left: 20px;
+        margin: 20px;
+    }
+  
+}
+@keyframes courses-intro-animation {
+    0%{
+        transform: rotate(-5deg);
+    }
+     25%{
+        transform: rotate(0deg);
+      
+    } 
+     50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(-5deg);
+      
+    } 
+}
+
+.why-me-parent{
+    height: 100vh;
+    margin-top: 180px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.why-me{
+    height: 300px;
+    width: 300px;
+    background-color: #001220;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.why-me h1{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.why-me-content{
+    display: none;
+}
+.why-me:hover > h1{
+    display: none;
+}
+.why-me:hover > .why-me-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+   align-content: center;
+   justify-content: center;
+
+}
+.why-me:hover{
+    transform: scale(1.5);
+    background-color: #EBECF0; 
+    background: #EBECF0;
+box-shadow:  5px 5px 0px #d1d2d6,
+             -5px -5px 0px #ffffff;
+             color: black;
+             font-weight: bold;
+}
