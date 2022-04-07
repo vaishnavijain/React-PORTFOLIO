@@ -17,7 +17,7 @@ function Home() {
           <div className="intro-content d-flex justify-content-between">
            
             <p>
-              ***---Developer!---***<br/>
+              Developer!<br/>
               Web design reimagined!
             </p>
             <button className="primary-button font-bold m-2">
